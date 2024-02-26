@@ -1,0 +1,18 @@
+
+:root {
+	--primary-blue: #3498db;
+	--primary-green: #2ecc71;
+	--primary-yellow: #f1c40f;
+	--primary-red: #e74c3c;
+	--light-grey: #ecf0f1;
+	--dark-grey: #34495e;
+}
+
+.main{
+    margin-top: 1.5rem;
+}
+
+.main__title{
+    text-align: center;
+    color: var(--dark-grey);
+}

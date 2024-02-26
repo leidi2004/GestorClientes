@@ -1,5 +1,5 @@
 import {CustomerCard} from "../CustomerCard/CustomerCard"
-
+import styles from './CustomerList.module.css'
 export const CustomerList = () => {
     const customers = [
         {
@@ -32,7 +32,7 @@ export const CustomerList = () => {
           },        
     ]
   return (
-    <div>
+    <div className={styles.wrapper}>
         {
             customers.map((customer)=>(<CustomerCard customer={customer} key={customer.identificacion}/>))
         }
