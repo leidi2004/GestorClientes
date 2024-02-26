@@ -16,7 +16,7 @@ function App() {
             <Route path='/inicio' element={<Index/>}/>
             <Route path='/clientes' element={<Customers/>}/>
             <Route path='/gestion-cliente' element={<CustomerForm/>}/>
-            <Route path='/detalles-cliente' element={<CustomerDetails/>}/>
+            <Route path='/detalles-cliente/:identificacion' element={<CustomerDetails/>}/>
             <Route path='*' element={<NotFound/>}/>
         </Routes>
       </BrowserRouter>

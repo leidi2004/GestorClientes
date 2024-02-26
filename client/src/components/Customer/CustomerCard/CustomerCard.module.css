@@ -1,0 +1,76 @@
+:root {
+	--primary-blue: #3498db;
+	--primary-green: #2ecc71;
+	--primary-yellow: #f1c40f;
+	--primary-red: #e74c3c;
+	--light-grey: #ecf0f1;
+	--dark-grey: #34495e;
+}
+
+.card {
+	display: flex;
+	gap: 0.8rem;
+	padding: 0.5rem;
+	line-height: 1.2;
+	flex-wrap: wrap;
+}
+
+.card__img {
+	width: 35%;
+	max-width: 120px;
+}
+
+.card__text {
+	color: darkslategray;
+}
+
+.card__textBold {
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+}
+
+.card__link {
+	display: block;
+	color: var(--primary-blue);
+	margin-top: 1rem;
+}
+
+.card__link:hover {
+	color: #337bac;
+}
+
+.card__buttonContainer {
+	@media (min-width: 425px) {
+		margin-left: 2rem;
+	}
+}
+
+.card__buttonContainer button {
+	border: none;
+	margin-right: 0.5rem;
+	padding: 0.5rem;
+	border-radius: 3px;
+}
+
+.card__buttonContainer button:hover {
+	cursor: pointer;
+}
+
+.card__buttonDelete {
+	background-color: var(--primary-red);
+	color: #ecf0f1;
+}
+
+.card__buttonDelete:hover {
+	background-color: #fa7162;
+	transition: background ease-in 0.5s 0.3s;
+}
+
+.card__buttonEdit {
+	color: var(--primary-green);
+}
+.card__buttonEdit:hover {
+	background-color: #75f8ac;
+	color: #fff;
+	transition: ease-in 0.5s 0.3s;
+}

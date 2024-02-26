@@ -1,6 +1,14 @@
+import { CustomerList } from "../../components/Customer/CustomerList/CustomerList"
+import { Nav } from "../../components/Layout/Nav/Nav"
+
 export const Customers = () => {
   return (
-    <div>Customers</div>
+    <>
+      <Nav/>
+      <main>
+        <CustomerList/>
+      </main>
+    </>
   )
 }
 
