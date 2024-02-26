@@ -1,0 +1,28 @@
+:root{
+    --primary-blue: #3498db;
+    --primary-green: #2ecc71;
+    --primary-yellow: #f1c40f;
+    --primary-red: #e74c3c;
+    --light-grey: #ecf0f1;
+    --dark-grey:#34495e; 
+}
+
+.main{
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.main__title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.main__text{
+
+}
+
+.main__link{
+    color: var(--primary-green);
+}
