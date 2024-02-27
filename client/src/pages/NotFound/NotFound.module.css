@@ -1,0 +1,25 @@
+.main{
+    padding: 1.5rem 1rem;
+}
+
+.main__title, .main__link{
+    text-align: center;
+}
+
+.main__title{
+    margin-bottom: 2rem;
+    color: var(--dark-grey);
+}
+
+.main__img{
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.main__link{
+    display: block;
+    color: var(--primary-blue);
+    margin-top: 1rem;
+}
