@@ -40,3 +40,11 @@
     background-color: #4aaff1;
     cursor: pointer;
 }
+
+.form__span{
+    display: block;
+    color: var(--primary-red);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+}
