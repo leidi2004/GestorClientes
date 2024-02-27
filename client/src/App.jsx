@@ -3,7 +3,7 @@ import {LogIn} from './pages/LogIn/LogIn'
 import {Index} from './pages/Index/Index'
 import {Customers} from './pages/Customers/Customers'
 import {CustomerDetails} from './pages/CustomerDetails/CustomerDetails'
-import {CustomerForm} from './pages/CustomerForm/CustomerForm'
+import {CustomerManagement} from './pages/CustomerManagement/CustomerManagement'
 import {NotFound} from './pages/NotFound/NotFound'
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
             <Route path='/' element={<LogIn/>}/>
             <Route path='/inicio' element={<Index/>}/>
             <Route path='/clientes' element={<Customers/>}/>
-            <Route path='/gestion-cliente' element={<CustomerForm/>}/>
+            <Route path='/gestion-cliente' element={<CustomerManagement/>}/>
             <Route path='/detalles-cliente/:identificacion' element={<CustomerDetails/>}/>
             <Route path='*' element={<NotFound/>}/>
         </Routes>
