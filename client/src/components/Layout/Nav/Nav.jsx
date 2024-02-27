@@ -9,7 +9,7 @@ export const Nav = () => {
                 <IoPeopleCircleOutline className={styles.nav__icon} />
             </div>
 			<ul className={styles.ul}>
-				<li className={styles.ul__li}><Link className={styles.nav__link} to='/inicio'>Inicio</Link></li>
+				<li className={styles.ul__li}><Link className={styles.nav__link} to='/'>Inicio</Link></li>
 				<li className={styles.ul__li}><Link className={styles.nav__link} to='/clientes'>Clientes</Link></li>
 				<li className={styles.ul__li}><Link className={styles.nav__link} to='/gestion-cliente'>Agregar Cliente</Link></li>
 			</ul>

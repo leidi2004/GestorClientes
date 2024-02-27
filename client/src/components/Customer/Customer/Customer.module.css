@@ -1,0 +1,29 @@
+.section{
+    padding: 1rem;
+}
+
+.section__img{
+    display: block;
+    width: 40%;
+    max-width: 140px;
+    align-self: center;
+    margin: 2rem auto;
+    border-radius: 4px;
+}
+
+.section__wrapper{
+    line-height: 1.4;
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section__text{
+    margin-bottom: 0.5rem;
+}
+
+.section__textBold{
+    color: var(--dark-grey);
+    font-weight: 600;
+}

@@ -32,10 +32,10 @@ export const CustomerList = () => {
           },        
     ]
   return (
-    <div className={styles.wrapper}>
+    <section className={styles.section}>
         {
             customers.map((customer)=>(<CustomerCard customer={customer} key={customer.identificacion}/>))
         }
-    </div>
+    </section>
   )
 }
