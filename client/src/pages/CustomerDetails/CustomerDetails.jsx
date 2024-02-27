@@ -1,27 +1,15 @@
-import { Nav } from "../../components/Layout/Nav/Nav"
-import { Customer } from "../../components/Customer/Customer/Customer"
-
+import { Nav } from '../../components/Layout/Nav/Nav';
+import { Customer } from '../../components/Customer/Customer/Customer';
+import { useParams } from 'react-router-dom';
+import { useGetClienteQuery } from "../../features/apiSlice"
 
 export const CustomerDetails = () => {
-  const cliente = {
-    "identificacion": "123456789",
-    "tipoIdentificacion": "Cédula",
-    "primerNombre": "Juan",
-    "segundoNombre": "Pablo",
-    "primerApellido": "Gomez",
-    "segundoApellido": "Martinez",
-    "direccion": "Calle 123, Ciudad",
-    "telefono": "555-1234",
-    "email": "juan@gmail.com",
-    "ocupacion": "Ingeniero",
-    "fechaNacimiento": "1990-05-15",
-    "foto": "https://i.pinimg.com/736x/26/69/11/26691192fc3011381a5ea5d31bac1097.jpg"
-  }
-  return (
-    <main>
-      <Nav/>
-      <Customer cliente={cliente} />
-    </main>
-  )
-}
-
+  const { identificacion } = useParams();
+  const { data: cliente } = useGetClienteQuery(identificacion);
+	return (
+		<main>
+			<Nav />
+			{cliente ? <Customer cliente={cliente} /> : <p>Loading...</p>}
+		</main>
+	);
+};

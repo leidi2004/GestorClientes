@@ -4,6 +4,7 @@ import {Customers} from './pages/Customers/Customers'
 import {CustomerDetails} from './pages/CustomerDetails/CustomerDetails'
 import {CustomerManagement} from './pages/CustomerManagement/CustomerManagement'
 import {NotFound} from './pages/NotFound/NotFound'
+import { EditForm } from './components/Forms/EditForm/EditForm'
 
 function App() {
  
@@ -13,10 +14,9 @@ function App() {
         <Routes>
             <Route path='/' element={<Index/>}/>
             <Route path='/clientes' element={<Customers/>}/>
-            <Route path='/gestion-cliente' element={<CustomerManagement
-            />}/>
-            {/* <Route path='/detalles-cliente/:identificacion' element={<CustomerDetails/>}/> */}
-            <Route path='/detalles-cliente' element={<CustomerDetails/>}/>
+            <Route path='/gestion-cliente' element={<CustomerManagement/>}/>
+            <Route path='/detalles-cliente/:identificacion' element={<CustomerDetails/>}/>
+            <Route path='/editar-cliente/:identificacion' element={<EditForm/>}/>
             <Route path='*' element={<NotFound/>}/>
         </Routes>
       </BrowserRouter>

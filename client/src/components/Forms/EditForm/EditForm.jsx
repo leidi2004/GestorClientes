@@ -1,9 +1,12 @@
-import styles from './CustomerForm.module.css';
+import styles from './EditForm.module.css';
 import { useForm } from 'react-hook-form';
-import { useCreateClienteMutation } from '../../../features/apiSlice';
+import { useEditClienteMutation } from '../../../features/apiSlice';
+import { useParams } from 'react-router-dom';
 
-export const CustomerForm = () => {
-	const [createCliente] = useCreateClienteMutation();
+export const EditForm = () => {
+	const [editClient] = useEditClienteMutation();
+	const {identificacion} = useParams();
+	
 	const {
 		register,
 		handleSubmit,
@@ -13,7 +16,7 @@ export const CustomerForm = () => {
 
 	const handleCustomer = data => {
 		console.log(data);
-		createCliente(data)
+		editClient(data)
 	};
 
 	return (

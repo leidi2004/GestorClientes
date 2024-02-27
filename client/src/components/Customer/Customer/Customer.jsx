@@ -1,7 +1,7 @@
 import { PropTypes } from 'prop-types';
 import styles from './Customer.module.css';
 import moment from 'moment';
-export const Customer = ({ cliente }) => {
+export const Customer = ({cliente}) => {
 	return (
 		<section className={styles.section}>
 			<img
@@ -13,11 +13,11 @@ export const Customer = ({ cliente }) => {
 				<div>
 					<p className={styles.section__textBold}>Nombres</p>
 					<p className={styles.section__text}>
-						{cliente.primerNombre + ' ' + cliente.segundoNombre}
+						{cliente.primerNombre + ' ' + cliente.segundoNombre ? cliente.segundoNombre : ""}
 					</p>
 					<p className={styles.section__textBold}>Apellidos</p>
 					<p className={styles.section__text}>
-						{cliente.primerApellido + ' ' + cliente.segundoApellido}
+						{cliente.primerApellido + ' ' + cliente.segundoApellido ? cliente.segundoApellido : ""}
 					</p>
 					<p className={styles.section__textBold}>Documento</p>
 					<p className={styles.section__text}>
@@ -30,11 +30,11 @@ export const Customer = ({ cliente }) => {
 					<p className={styles.section__textBold}>Telefono</p>
 					<p className={styles.section__text}>{cliente.telefono}</p>
 					<p className={styles.section__textBold}>E-mail</p>
-					<p className={styles.section__text}>{cliente.email}</p>
+					<p className={styles.section__text}>{cliente.email ? cliente.email : ""}</p>
 					<p className={styles.section__textBold}>Dirección</p>
-					<p className={styles.section__text}>{cliente.direccion}</p>
+					<p className={styles.section__text}>{cliente.direccion ? cliente.direccion : ""}</p>
 					<p className={styles.section__textBold}>Ocupación</p>
-					<p className={styles.section__text}>{cliente.ocupacion}</p>
+					<p className={styles.section__text}>{cliente.ocupacion ? cliente.ocupacion : ""}</p>
 				</div>
 			</div>
 		</section>

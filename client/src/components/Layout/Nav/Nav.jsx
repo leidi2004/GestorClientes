@@ -13,11 +13,6 @@ export const Nav = () => {
 				<li className={styles.ul__li}><Link className={styles.nav__link} to='/clientes'>Clientes</Link></li>
 				<li className={styles.ul__li}><Link className={styles.nav__link} to='/gestion-cliente'>Agregar Cliente</Link></li>
 			</ul>
-			<button className={styles.nav__button}>
-                <span className={styles.span}></span>
-                <span className={styles.span}></span>
-                <span className={styles.span}></span>
-            </button>
 		</nav>
 	);
 };
